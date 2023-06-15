@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer United States | For Gamers. By Gamers</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navi{
+            position: fixed;
+            height: 60px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #44D62C;
+        }
+        #navTab{
+            color: grey;
+        }
+        .text{
+            color: grey;
+            text-decoration: none;
+        }
+        .text1{
+            color: white;
+            text-decoration: none;
+        }
+        .text:hover{
+            color: white;
+        }
+        ul li{
+            display: inline;
+            margin: 35px;  
+            font: 18px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #logo{
+            height: 35px;
+            width: 35px;
+            /* background-image: url(https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg); */
+            margin-right: 35px;
+        }
+        #srch{
+            margin-right: 30px;
+        }
+        #cart{
+            margin-right: 30px;
+        }
+        #noti1{
+            height: 60px;
+            width: 100%;
+        }
+        #noti{
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(86, 85, 85);
+            align-items: center;
+            color: white;
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #fst1{
+            height: 100vh;
+            width: 100%;
+            background-image: url(./razer-edge-hero1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #bg{
+            height: 100vh;
+            width: 100%;
+            background-image:radial-gradient(rgba(255, 255, 255, 0), black);
+        }
+        #bg1{
+            height: 500px;
+            width: 100%;
+            background-image:radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.511));
+        }
+        #scnd{
+            height: 100vh;
+            width: 100%;
+            background-image: url(./razer-atlas-precision-desktop.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #thrd{
+            height: 100vh;
+            width: 100%;
+            background-image: url(./razer-blade-18-hero-desktop-v21.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #forth{
+            height: 550px;
+            width: 100%;
+            display: flex;
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #frth1{
+            height: 100%;
+            width: 100%;
+            background-image: url(./razer-blade-18-hero-desktop-v2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-right: 5px solid rgb(66, 66, 66);
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #frth2{
+            height: 100%;
+            width: 100%;
+            background-image: url(./redfall-game-bundle-nvidia-hero-desktop.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-left: 5px solid rgb(66, 66, 66);
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #five{
+            height: 550px;
+            width: 100%;
+            display: flex;
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #five1{
+            height: 100%;
+            width: 100%;
+            background-image: url(./razer-blackwidow-v4-pro-hero-1920x700.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            border-right: 5px solid rgb(66, 66, 66);
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #five2{
+            height: 100%;
+            width: 100%;
+            background-image: url(./screenshot-www.razer.com-2023.03.20-13_51_53.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-left: 5px solid rgb(66, 66, 66);
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #six{
+            height: 500px;
+            width: 100%;
+            display: flex;
+            border-bottom: 10px solid rgb(66, 66, 66);
+        }
+        #six1{
+            height: 500px;
+            width: 100%;
+            background-image: url(./razer-enki-pro-automobili-lamborghini-hero-desktop.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-right: 5px solid rgb(36, 36, 36);
+            border-bottom: 10px solid rgb(36, 36, 36);
+        }
+        #six2{
+            height: 500px;
+            width: 100%;
+            background-image: url(./nbcf-partnership_1920x600.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-left: 5px solid rgb(36, 36, 36);
+            border-bottom: 10px solid rgb(36, 36, 36);
+        }
+        #svn{
+            height: 400px;
+            width: 100%;
+            background-color: rgb(20, 20, 20);
+            border-bottom: 10px solid rgb(36, 36, 36);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #new{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight:lighter;
+            margin-top: 10px;
+        }
+        #new1{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight:lighter;
+            margin-top: 10px;
+        }
+        #lrn{
+            margin-right: 50px;
+        }
+        #info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        #infobox1{
+            margin-top: 30px;
+            height: 36px;
+            width: 100px;
+            text-align: center;
+            border: none;
+            color: black;
+            background-color: rgb(255, 157, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #com{
+            font-size: 9px;
+            display: flex;
+            justify-content: start;
+            padding-left: 12px;
+        }
+        .infobox2{
+            font-size: 1.2cm;
+            font-weight:bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #infobox2{
+            margin-top: 30px;
+        }
+        #infobox21{
+            margin-top: 60px;
+        }
+        #infobox22{
+            margin-top: 60px;
+        }
+        .infobox23{
+            font-size: 1cm;
+            font-weight:bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 60px;
+        }
+        #infobox233{
+            font-size: 1cm;
+            font-weight:bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+        }
+        .infobox3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight:lighter;
+        }
+        #infobox3{
+            margin-top: 10px;
+        }
+        #infobox31{
+            margin-top: 20px;
+        }
+        #infobox32{
+            margin-top: 10px;
+        }
+        .infobox33{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight:lighter;
+            margin-top: 10px;
+        }
+        #infobox4{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight:lighter;
+            margin-top: 10px;
+        }
+        #arrow{
+            color: #44D62C;
+        }
+        #box1{
+            margin-top: 10px;
+            height: 330px;
+            width: 1300px;
+            display: flex;
+            flex-direction: row;
+        }
+        #box2{
+            height: 50px;
+            width: 1250px;
+            border-top: 1px solid grey;
+            display: flex;
+            font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fbox{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+            margin-left: 20px;
+            height: 300px;
+            width: 220px;
+            color: grey;
+            font-size: small;
+        }
+        .fbox ul li{
+            display:flex;
+            flex-direction: column;
+            margin: 15px;
+        }
+        .fboxtext{
+            color: white;
+        }
+        #socialbox{
+            font-family:Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+            margin-left: 20px;
+            height: 300px;
+            width: 300px;
+            color: greenyellow;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            font-size: large;
+        }
+        .logos{
+            display: flex;
+            flex-direction: row;
+        }
+        .logos div{
+            text-decoration: none;
+            margin-left: 30px;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+        #fb{
+            font-size: 20px;
+            padding: 9px 14px;
+        }
+        a i{
+            color: gray;
+        }
+        #logoo{
+            font-size: 20px;
+        }
+        .logos a i{
+            padding: 10px 10px;
+            border-radius: 50%;
+            border: 1px solid greenyellow;
+            color: greenyellow;
+        }
+        #fff{
+            margin-top: 20px;
+            margin-left: 10px;
+            color: grey;
+        }
+        #sss{
+            height: 15px;
+            margin-top: 20px;
+            margin-left: 10px;
+            color: grey;
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+        }
+        .ftr{
+            height: 15px;
+            margin-left: 20px;
+        }
+        #ttt{
+            margin-top: 20px;
+            margin-left: 320px;
+            color: grey;
+            display: flex;
+            flex-direction: row;
+        }
+        #lastttt{
+            color: white;
+        }
+        #logoo:hover{
+            color: white;
+        }
+        .hvr:hover{
+            color: white;
+            text-decoration: underline;
+        }
+        .ftr:hover{
+            color: white;
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <nav id="navi">
+        <div id="logo"><a href="https://www.razer.com"><img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg"></a></div>
+        <div id="navTab">
+            <ul>
+                <li><a class="text" href="#">Store</a></li>
+                <li><a class="text" href="#">PC</a></li>
+                <li><a class="text" href="#">Console</a></li>
+                <li><a class="text" href="#">Mobile</a></li>
+                <li><a class="text" href="#">Lifestyle</a></li>
+                <li><a class="text" href="#">Services</a></li>
+                <li><a class="text" href="#">Community</a></li>
+                <li><a class="text" href="#">Support</a></li>
+            </ul>
+        </div>
+        <div id="srch"><a href="#"><i id="logoo" class="fa fa-search" aria-hidden="true"></i>
+        </a></div>
+        <div id="cart"><a href="#"><i id="logoo" class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a></div>
+    </nav>
+    <div id="noti1"></div>
+    <div id="noti">All orders over US$79 will enjoy free standard shipping to the United States.</div>
+    <div id="fst1">
+        <div id="bg">
+            <div id="info">
+                <div><a class="text" href="#"><button id="infobox1"><b id="com">RAZOR.COM</b> <b>EXCLUSIVE</b></button></a></div>
+                <div class="infobox2" id="infobox2">RAZER EDGE</div>
+                <div class="infobox3" id="infobox3">THE ULTIMATE ANDROID GAMING HANDHELD</div>
+                <div id="new">
+                    <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                    <div class="hvr"><a class="text1" href="#">Buy </a><b id="arrow">></b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scnd">
+        <div id="bg">
+            <div id="info">
+                <div class="infobox2" id="infobox21">RAZER VR ACCESSORIES</div>
+                <div class="infobox3" id="infobox31">FOR META QUEST 2</div>
+                <div id="new">
+                    <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                    <div class="hvr"><a class="text1" href="#">Buy </a><b id="arrow">></b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="thrd">
+        <div id="bg">
+            <div id="info">
+                <div class="infobox2" id="infobox22">NEW RAZER BLADE 18</div>
+                <div class="infobox3" id="infobox32">THE ULTIMATE DESKTOP REPLACEMENT</div>
+                <div id="new">
+                    <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                    <div class="hvr"><a class="text1" href="#">Buy </a><b id="arrow">></b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="forth">
+        <div id="frth1">
+            <div id="bg">
+                <div id="info">
+                    <div class="infobox23">NEW RAZER BLADE 15</div>
+                    <div class="infobox33">PORTABLE. POWERFUL. PERFECTION.</div>
+                    <div id="new1">
+                        <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                        <div class="hvr"><a class="text1" href="#">Shop All Models</a> <b id="arrow">></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="frth2">
+            <div id="bg">
+                <div id="info">
+                    <div class="infobox23">BITE BACK WITH RTX</div>
+                    <div class="infobox33">GET REDFALL BITE BACK EDITION WITH SELECT GEFORCE RTX 40 SERIES</div>
+                    <div id="new1">
+                        <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="five">
+        <div id="five1">
+            <div id="bg">
+                <div id="info">
+                    <div class="infobox23">RAZER BLACKWIDOW V4 PRO</div>
+                    <div class="infobox33">FULL-BLOWN BATTLESTATION IMMERSION</div>
+                    <div id="new1">
+                        <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                        <div class="hvr"><a class="text1" href="#">Buy </a><b id="arrow">></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="five2">
+            <div id="bg">
+                <div id="info">
+                    <div class="infobox23">NEW RAZER BLADE 16</div>
+                    <div class="infobox33">BIGGER. BETTER. STILL THE BEST.</div>
+                    <div id="new1">
+                        <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                        <div class="hvr"><a class="text1" href="#">Buy </a><b id="arrow">></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="six">
+        <div id="six1">
+            <div id="bg1">
+                <div id="info">
+                    <div><a class="text" href="#"><button id="infobox1"><b id="com">RAZOR.COM</b> <b>EXCLUSIVE</b></button></a></div>
+                    <div id="infobox233" class="infobox23">RAZER ENKI PRO</div>
+                    <div class="infobox33">AUTOMOBILE LAMBORGHINNI EDITION</div>
+                    <div id="new1">
+                        <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                        <div class="hvr"><a class="text1" href="#">Buy </a><b id="arrow">></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="six2">
+            <div id="bg1">
+                <div id="info">
+                    <div class="infobox23">MARCH FOR VICTORY</div>
+                    <div class="infobox33">JOIN OUR CAUSE TODAY</div>
+                    <div id="new1">
+                        <div class="hvr" id="lrn"><a class="text1" href="#">Learn More </a><b id="arrow">></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="svn">
+        <div id="box1">
+            <div class="fbox">
+                <ul>
+                    <li><b class="fboxtext">Shop</b></li>
+                    <li class="hvr"><a class="text" href="#">RazerStores</a></li>
+                    <li class="hvr"><a class="text" href="#">RazerCafe</a></li>
+                    <li class="hvr"><a class="text" href="#">Store Locator</a></li>
+                    <li class="hvr"><a class="text" href="#">Purchase Programs</a></li>
+                    <li class="hvr"><a class="text" href="#">Education</a></li>
+                    <li class="hvr"><a class="text" href="#">Exclusives</a></li>
+                    <li class="hvr"><a class="text" href="#">RazerStore Rewards</a></li>
+                    <li class="hvr"><a class="text" href="#">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <ul>
+                    <li><b class="fboxtext">Explore</b></li>
+                    <li class="hvr"><a class="text" href="#">Technology</a></li>
+                    <li class="hvr"><a class="text" href="#">Chroma RGB</a></li>
+                    <li class="hvr"><a class="text" href="#">Concepts</a></li>
+                    <li class="hvr"><a class="text" href="#">Esports</a></li>
+                    <li class="hvr"><a class="text" href="#">Collabs</a></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <ul>
+                    <li><b class="fboxtext">Support</b></li>
+                    <li class="hvr"><a class="text" href="#">Get Help</a></li>
+                    <li class="hvr"><a class="text" href="#">Registration & Warranty</a></li>
+                    <li class="hvr"><a class="text" href="#">RazerStore Support</a></li>
+                    <li class="hvr"><a class="text" href="#">RazerCare</a></li>
+                    <li class="hvr"><a class="text" href="#">Manage Razer ID</a></li>
+                    <li class="hvr"><a class="text" href="#">Support Videos</a></li>
+                    <li class="hvr"><a class="text" href="#">Accessibility Statement</a></li>
+                </ul>
+            </div>
+            <div class="fbox">
+                <ul>
+                    <li><b class="fboxtext">Company</b></li>
+                    <li class="hvr"><a class="text" href="#">About Us</a></li>
+                    <li class="hvr"><a class="text" href="#">Careers</a></li>
+                    <li class="hvr"><a class="text" href="#">Press Room</a></li>
+                    <li class="hvr"><a class="text" href="#">zVentures</a></li>
+                    <li class="hvr"><a class="text" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="socialbox">
+                <div>FOR GAMERS. BY GAMERS.<sup>TM</sup></div>
+                <div class="logos">
+                    <div><a href="#"><i id="fb" class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    <div><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                    <div><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="fff">Copyright © 2023 Razer Inc. All rights reserved.</div>
+            <div id="sss">
+                <div class="ftr"><a class="text" href="#">Site Map</a></div>
+                <div class="ftr"><a class="text" href="#">Legal Terms</a></div>
+                <div class="ftr"><a class="text" href="#">Privacy Policy</a></div>
+                <div class="ftr"><a class="text" href="#">Cookie Settings</a></div>
+            </div>
+            <div id="ttt">
+                <div id="lastttt"><b>United States</b></div>
+                <div class="ftr"><a class="text" href="#">Change Location ></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
